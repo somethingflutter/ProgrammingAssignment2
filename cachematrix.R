@@ -4,14 +4,14 @@
 
 ## makeCacheMatrix creates a sprcial vector, which is a list of functions for the following:
 ##  set the value of the matrix
-##  get the value of the matric
+##  get the value of the matrix
 ##  set the value for the inverse of the matrix
 ##  get the value for the inverse of the matrix
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL #variable that stores the inverse value
     set <- function(y){
         x <<- y
-        inv <<- NULL  #Clear the inverse when the matrix has been changed
+        inv <<- NULL  #clear the inverse when the matrix has been changed
     }
     get <- function() x
     setInverse <- function(inverse) inv <<- inverse
